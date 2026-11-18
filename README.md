@@ -13,6 +13,7 @@ and what you take is in that folder when the camera closes. It has no adverts, n
 - Opens the phone's full camera and moves what you take into the chosen folder when it closes
 - Folders and sub-folders in DCIM/Sortshot, home-screen shortcuts, a quick-settings tile
 - Tags and notes (typed or dictated), written into JPEG files so they travel with the photo
+- Optional date and time, and latitude and longitude, printed on each photo as it is filed
 - Search across folders, a review screen for each session, stamped copies, PDF report, zip export
 - Google Drive backup of chosen folders to your own Drive, using only the "files this app created" permission
 - Hide folders from the Gallery, and a 30-day bin
