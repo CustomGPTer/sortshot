@@ -1,11 +1,8 @@
-First public release.
+New in 1.3:
 
-- Pick a folder, tap Shoot, and the phone's own camera opens. What you take is filed into that folder when the camera closes.
-- Folders and sub-folders in DCIM/Sortshot, home-screen shortcuts, a quick-settings tile.
-- Tags and notes (typed or dictated), written into JPEG photos so they travel with them.
-- Search, a review screen for each session, stamped copies, PDF photo report, zip export.
-- Google Drive backup of chosen folders to your own Drive, over Wi-Fi.
-- Hide folders from the Gallery, and a 30-day bin.
+- Timestamp on photos (Settings). The date and time are printed in the bottom-left corner of each photo as it is filed, the same size and place as the Samsung camera's own watermark.
+- Coordinates on photos (Settings). Where the photo was taken is printed on it as latitude and longitude, from the location the camera saved in the photo.
+- Both are off until you switch them on. JPEG photos only; motion photos, HEIC, RAW, 200 MP photos and videos are filed without a stamp.
 
 Download **Sortshot.apk** below and open it on your phone. Android 13 or newer.
 Installing notes: https://customgpter.github.io/sortshot/#installing
