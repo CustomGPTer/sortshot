@@ -31,7 +31,7 @@ Google Drive sign-in works only in a copy signed with a key registered for the a
 
 ## Licence
 
-© 2026 Jonathan Jackson. Published under the GNU General Public License, version 3 (see `LICENSE`).
+© 2026 Jonathan Jackson. All rights reserved. The app's source code is not published; this repository holds the website and the app releases.
 
 As an additional permission under section 7 of that licence, you may combine Sortshot with Google Play
 services and distribute the result, provided you follow the licence for everything else.
