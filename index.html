@@ -1,61 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sortshot: file your camera photos into the right folder as you take them</title>
-<meta name="description" content="Sortshot files the photos you take with your phone's own camera into the folder you choose. Free, with no adverts, no accounts and no tracking.">
+<title>Sortshot: pick a folder, tap Shoot, and your photos land in it</title>
+<meta name="description" content="Sortshot is a free Android app that files the photos you take straight into your own folders, with tags, notes, search and an optional Google Drive copy. It uses your phone&#x27;s own camera. No adverts, no account.">
 <meta name="author" content="Jonathan Jackson">
 <link rel="canonical" href="https://customgpter.github.io/sortshot/">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<meta property="og:title" content="Sortshot: file your camera photos into the right folder as you take them">
-<meta property="og:description" content="Sortshot files the photos you take with your phone's own camera into the folder you choose. Free, with no adverts, no accounts and no tracking.">
-<meta property="og:image" content="https://customgpter.github.io/sortshot/assets/screens.png">
-<meta name="theme-color" content="#0e0f12">
-<link rel="stylesheet" href="assets/site.css">
+<meta name="theme-color" content="#f6f4ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0f12" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sortshot">
+<meta property="og:title" content="Sortshot: pick a folder, tap Shoot, and your photos land in it">
+<meta property="og:description" content="Sortshot is a free Android app that files the photos you take straight into your own folders, with tags, notes, search and an optional Google Drive copy. It uses your phone&#x27;s own camera. No adverts, no account.">
+<meta property="og:url" content="https://customgpter.github.io/sortshot/">
+<meta property="og:image" content="https://customgpter.github.io/sortshot/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sortshot&#x27;s folders screen with Kitchen, Garden and Site visits">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<link rel="preload" href="./assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/site.css?v=1">
+<link rel="stylesheet" href="./assets/house.css?v=1">
+<link rel="stylesheet" href="./assets/apps-list.css?v=1">
+<script src="./assets/apps-list.js?v=1" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Sortshot","url":"https://customgpter.github.io/sortshot/","description":"Sortshot is a free Android app that files the photos you take straight into your own folders, with tags, notes, search and an optional Google Drive copy. It uses your phone's own camera. No adverts, no account.","applicationCategory":"PhotographyApplication","operatingSystem":"Android 13 or later","softwareVersion":"1.3","downloadUrl":"https://github.com/CustomGPTer/sortshot/releases/latest/download/Sortshot.apk","releaseNotes":"https://customgpter.github.io/sortshot/releases.html","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"inLanguage":"en-GB","image":"https://customgpter.github.io/sortshot/assets/og.png","featureList":["Your camera, your folders","Only what you shot through it","Folders and sub-folders","One tap from anywhere","Tags and notes","They travel with the photo","Search","Timestamp on the photo","Stamped copies","PDF report and zip","Google Drive backup","Hide from the Gallery"],"author":{"@type":"Person","name":"Jonathan Jackson"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Sortshot really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is no paid version, no subscription and no adverts. See the comparison."}},{"@type":"Question","name":"Is it a camera?","acceptedAnswer":{"@type":"Answer","text":"No. It opens the camera already on your phone, with every mode it has, so nothing about how your photos look changes."}},{"@type":"Question","name":"Does it touch photos I take without it?","acceptedAnswer":{"@type":"Answer","text":"No. Filing starts when you tap Shoot and stops the moment the camera closes."}},{"@type":"Question","name":"Where do my photos go?","acceptedAnswer":{"@type":"Answer","text":"Into folders in DCIM › Sortshot, so each folder is also an album in the phone's Gallery."}},{"@type":"Question","name":"Why does it ask for all files access and usage access?","acceptedAnswer":{"@type":"Answer","text":"All files access lets it move your shots out of the Camera folder. Usage access lets it see the moment the camera closes. Nothing about your app use is kept or sent."}},{"@type":"Question","name":"How do I switch on usage access?","acceptedAnswer":{"@type":"Answer","text":"Android locks it for apps downloaded outside the Play Store. Try to switch Sortshot on once, then open Settings, Apps, Sortshot, tap the three dots and choose Allow restricted settings. The app shows these steps."}},{"@type":"Question","name":"Is Google Drive backup needed?","acceptedAnswer":{"@type":"Answer","text":"No. It is off until you connect it, and copies only the folders you choose. A photo deleted on the phone stays in your Drive."}},{"@type":"Question","name":"How do I update Sortshot?","acceptedAnswer":{"@type":"Answer","text":"The app tells you when a new version is out. Download it from this site and install it over the old one; your folders, tags and notes stay."}}]}</script>
 </head>
 <body>
-<header><a class="brand" href="index.html"><img src="assets/favicon.svg" alt="" width="28" height="28">Sortshot</a><nav><a href="index.html" class="on">Home</a><a href="releases.html">Releases</a><a href="more-apps.html">More apps</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav></header>
-<main>
-
-<section class="hero">
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<a class="brand" href="./" aria-label="Sortshot home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#15171c"/><path d="M14 18h13c1.3 0 2.5.6 3.3 1.6L33.2 23H50c2.8 0 5 2.2 5 5v20c0 2.8-2.2 5-5 5H14c-2.8 0-5-2.2-5-5V23c0-2.8 2.2-5 5-5z" fill="#ffc233"/><circle cx="32" cy="38" r="10.5" fill="#15171c"/><circle cx="32" cy="38" r="6.2" fill="#ffc233"/><circle cx="34.4" cy="35.6" r="1.7" fill="#15171c"/></svg><span>Sortshot</span></a>
+<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="./compare.html">Compare</a></li><li><a href="./releases.html">Releases</a></li><li><a class="more-apps" href="./more-apps.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg>More apps</a></li></ul></nav>
+<a class="button small" href="https://github.com/CustomGPTer/sortshot/releases/latest/download/Sortshot.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download</a>
+</div>
+</header>
+<main id="main">
+<div class="hero">
+<div class="wrap hero-grid">
+<div class="hero-copy">
 <h1>Pick a folder. Tap Shoot. Your photos land in it.</h1>
-<p class="lead">On a Samsung phone every photo goes into one Camera folder. Sortshot fixes that without replacing the camera: choose a folder, tap Shoot, and the phone's own camera opens with every mode it has. When you close it, what you took is in your folder.</p>
-<p><a class="button" href="https://github.com/CustomGPTer/sortshot/releases/latest/download/Sortshot.apk">Download Sortshot</a> <span class="small">Android 13 or newer · about 4 MB · <a href="releases.html">what is new</a></span></p>
-<img class="shots" src="assets/screens.png" alt="Six Sortshot screens: folders, a folder with a sub-folder, a photo with its tags and note, the tags and note sheet, search, and Google Drive backup" width="1404" height="1736">
-</section>
-<section><h2>What it does</h2>
-<div class="grid">
-<div><h3>Your camera, your folders</h3><p>Sortshot opens the phone's full camera, with every mode it has, for photos and video. Shots are moved, not copied, so there is one copy and the Camera folder stays clear.</p></div>
-<div><h3>Only what you shot through it</h3><p>Filing stops the moment the camera closes. Photos you take by opening the camera yourself are never touched.</p></div>
-<div><h3>Folders and sub-folders</h3><p>They live in DCIM › Sortshot, so each one shows as an album in the Gallery. Names you can read on a computer: Kitchen_20261117_060812_001.jpg.</p></div>
-<div><h3>One tap from anywhere</h3><p>A home-screen shortcut for each folder, a quick-settings tile, and a Switch folder button while you shoot.</p></div>
-<div><h3>Tags and notes</h3><p>On one photo or many at once. Say a note instead of typing it. Tags typed before you shoot go on every shot of that session.</p></div>
-<div><h3>They travel with the photo</h3><p>Tags and notes are written into JPEG files in the standard place, so they are still there on a computer or in Drive. The picture itself is not touched.</p></div>
-<div><h3>Search</h3><p>Across every folder, by tag, note, file name, folder or date.</p></div>
-<div><h3>Timestamp on the photo</h3><p>Switch it on and the date and time are printed in the corner of each photo as it is filed, the same size as the Samsung camera's own watermark. The place it was taken can be printed under it.</p></div>
-<div><h3>Stamped copies</h3><p>A copy with the date, folder, note, tags or location printed in the corner. The original stays as it was.</p></div>
-<div><h3>PDF report and zip</h3><p>A folder as a PDF, two photos to a page with their notes, or as a zip with a list of every photo's tags and notes.</p></div>
-<div><h3>Google Drive backup</h3><p>Chosen folders are copied to a Sortshot folder in your own Drive, laid out the same way, over Wi-Fi. Sortshot can only see the files it put there.</p></div>
-<div><h3>Hide from the Gallery</h3><p>A switch for each folder, or for all of them. On, the photos show only in Sortshot. Off, they are back straight away.</p></div>
-<div><h3>A 30-day bin</h3><p>Anything you delete in Sortshot waits 30 days and goes back with one tap.</p></div>
-</div></section>
-<section><h2>What it will not do</h2>
-<ul>
-<li><strong>No camera of its own.</strong> It uses the one on your phone, so nothing about how your photos look changes.</li>
-<li><strong>No adverts, accounts or tracking.</strong> Nothing leaves the phone unless you switch on Google Drive backup.</li>
-<li><strong>Nothing deleted from Drive.</strong> A photo deleted on the phone stays in your Drive.</li>
-</ul></section>
-<section id="installing"><h2>Installing</h2>
-<ol>
-<li>Tap Download and open the file. Android will ask you to allow installs from your browser or file app.</li>
-<li>Play Protect may ask about an app it has not seen. Sortshot asks for access to all files because moving photos out of the Camera folder needs it.</li>
-<li>Open Sortshot and switch on the three things it asks for: All files access, Usage access and Notifications.</li>
-<li>Usage access is locked at first, because the app came from a download and not the Play Store. Try to switch Sortshot on once, so your phone shows "Restricted setting". Then open Settings, Apps, Sortshot, tap the three dots at the top right and choose Allow restricted settings. After that the switch works. The app shows these steps with a button for each.</li>
-</ol>
-<p class="small">The app checks this site's releases for a newer version and tells you when there is one. That check can be switched off in Settings.</p></section>
+<p class="lede">On a Samsung phone every photo goes into one Camera folder. Sortshot fixes that without replacing the camera: choose a folder, tap Shoot, and the phone's own camera opens with every mode it has.</p><p class="lede">When you close it, what you took is in your folder, with any tags and notes you added. Nothing else on the phone is touched.</p>
 
+<p class="get" id="download"><a class="button" href="https://github.com/CustomGPTer/sortshot/releases/latest/download/Sortshot.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download for Android</a><a class="aside" href="#install">How to install</a></p>
+<ul class="pills"><li>Version 1.3</li><li>Android 13 or later</li><li>3.9 MB</li></ul>
+<p class="facts">Free, with nothing to unlock. No adverts, no account with the developer, no tracking. <a href="compare.html">Compare</a> or read the <a href="releases.html">release notes</a>.</p>
+<p class="facts">Chrome may say the file might be harmful. It shows this for app files that do not come from Google Play. Choose Download anyway.</p>
+</div>
+<div class="hero-phone"><div class="phone"><img src="./assets/screens/folders.png" alt="Your folders, each with a Shoot button of its own." width="393" height="852" fetchpriority="high"></div></div>
+</div>
+</div>
+
+<section class="promises" aria-label="In short">
+<div class="wrap"><ul><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>No subscription</b><span>Every feature is in the free app.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>No adverts</b><span>None in the app and none on this site.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>Your own camera</b><span>Every mode your phone has, nothing changed.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>One copy</b><span>Shots are moved, not copied.</span></span></li></ul></div>
+</section>
+
+<section id="screens" aria-labelledby="screens-h">
+<div class="wrap">
+<h2 id="screens-h">A look inside</h2>
+<p class="intro">These are the real screens, drawn from the app&#x27;s own code with made-up photos. Swipe or scroll sideways to see them all.</p>
+<div class="gallery" tabindex="0" role="region" aria-label="Screens from Sortshot"><figure class="shot"><div class="phone"><img src="./assets/screens/folders.png" alt="Your folders, each with a Shoot button of its own." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Your folders, each with a Shoot button of its own.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/folder.png" alt="A folder of photos, filed as you took them." width="393" height="852" loading="eager" decoding="async"></div><figcaption>A folder of photos, filed as you took them.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/viewer.png" alt="A photo with its tags and note." width="393" height="852" loading="eager" decoding="async"></div><figcaption>A photo with its tags and note.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/tags.png" alt="Tags and a note on one photo or many, typed or dictated." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Tags and a note on one photo or many, typed or dictated.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/search.png" alt="Search every folder by tag, note, name or date." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Search every folder by tag, note, name or date.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/settings.png" alt="Settings for file names, videos and the timestamp." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Settings for file names, videos and the timestamp.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/setup.png" alt="Setting up: the three switches Sortshot needs, and why." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Setting up: the three switches Sortshot needs, and why.</figcaption></figure></div>
+</div>
+</section>
+
+<section id="how" aria-labelledby="how-h">
+<div class="wrap">
+<h2 id="how-h">How it works</h2>
+<p class="intro">There is nothing to buy and no account to make. Sortshot moves what you shoot into the folder you chose.</p>
+<ol class="steps"><li><h3>Pick a folder</h3><p>Make folders and sub-folders in DCIM › Sortshot, or use one you made before.</p></li><li><h3>Tap Shoot</h3><p>The phone's own camera opens, with every mode it has, for photos and video.</p></li><li><h3>Close the camera</h3><p>What you took is filed in your folder, with readable names, tags and notes.</p></li></ol>
+</div>
+</section>
+
+<section id="features" aria-labelledby="features-h">
+<div class="wrap">
+<h2 id="features-h">Everything is in, and all of it is free</h2>
+<p class="intro">Nothing below is held back for a paid tier, because there is no paid tier.</p>
+<div class="groups"><div class="group"><h3>Filing</h3><dl><div><dt>Your camera, your folders</dt><dd>The phone's full camera, for photos and video. Shots are moved, not copied, so the Camera folder stays clear.</dd></div><div><dt>Only what you shot through it</dt><dd>Filing stops the moment the camera closes. Photos you take by opening the camera yourself are never touched.</dd></div><div><dt>Folders and sub-folders</dt><dd>They live in DCIM › Sortshot, so each one shows as an album in the Gallery, with names you can read on a computer.</dd></div><div><dt>One tap from anywhere</dt><dd>A home-screen shortcut for each folder, a quick-settings tile, and a Switch folder button while you shoot.</dd></div></dl></div><div class="group"><h3>Finding</h3><dl><div><dt>Tags and notes</dt><dd>On one photo or many at once. Say a note instead of typing it, or set tags before you shoot.</dd></div><div><dt>They travel with the photo</dt><dd>Written into JPEG files in the standard place, so they are still there on a computer or in Drive.</dd></div><div><dt>Search</dt><dd>Across every folder, by tag, note, file name, folder or date.</dd></div></dl></div><div class="group"><h3>Sharing</h3><dl><div><dt>Timestamp on the photo</dt><dd>Switch it on and the date and time, and the place if you like, are printed in the corner as each photo is filed.</dd></div><div><dt>Stamped copies</dt><dd>A copy with the date, folder, note, tags or location printed on it. The original stays as it was.</dd></div><div><dt>PDF report and zip</dt><dd>A folder as a PDF, two photos to a page with their notes, or as a zip with a list of every photo's tags and notes.</dd></div></dl></div><div class="group"><h3>Keeping</h3><dl><div><dt>Google Drive backup</dt><dd>Chosen folders copied to a Sortshot folder in your own Drive, over Wi-Fi. Sortshot sees only the files it put there.</dd></div><div><dt>Hide from the Gallery</dt><dd>A switch for each folder, or for all of them.</dd></div><div><dt>A 30-day bin</dt><dd>Anything you delete in Sortshot waits 30 days and goes back with one tap.</dd></div></dl></div></div>
+</div>
+</section>
+
+<section id="privacy" aria-labelledby="privacy-h">
+<div class="wrap">
+<h2 id="privacy-h">Your photos are your business</h2>
+<ul class="plain"><li><h3>No servers</h3><p>Sortshot has no accounts and no servers. The developer receives nothing from the app.</p></li><li><h3>Your own Drive</h3><p>Backup is off until you connect it, and then goes only to your own Google Drive.</p></li><li><h3>No ads, no tracking</h3><p>There is no advertising, analytics or tracking, in the app or on this site.</p></li></ul>
+</div>
+</section>
+
+<section id="install" aria-labelledby="install-h">
+<div class="wrap">
+<h2 id="install-h">Installing and updating</h2>
+<p class="intro">Sortshot is not on Google Play, so your phone asks a couple of extra questions the first time.</p>
+<ol class="steps"><li><h3>Download the app file</h3><p>Tap Download on your phone. The file is called Sortshot.apk and is about 3.9 MB. If Chrome says the file might be harmful, choose Download anyway.</p></li><li><h3>Allow the install</h3><p>Open the file. The first time, Android asks you to allow your browser to install apps. Allow it, go back and tap Install. If Google Play Protect steps in, choose More details, then Install anyway.</p></li><li><h3>Updating later</h3><p>Sortshot tells you when a newer version is out. Install the new file over the old one and everything you have saved is kept.</p></li></ol>
+<p class="after-table">Version 1.3, released 18 November 2026. See the <a href="releases.html">release notes</a>, or <a href="releases.html#checking">check your download</a>.</p>
+</div>
+</section>
+
+<section id="questions" aria-labelledby="questions-h">
+<div class="wrap">
+<h2 id="questions-h">Questions</h2>
+<div class="faq"><details><summary>Is Sortshot really free?</summary><p>Yes. There is no paid version, no subscription and no adverts. <a href="compare.html">See the comparison</a>.</p></details><details><summary>Is it a camera?</summary><p>No. It opens the camera already on your phone, with every mode it has, so nothing about how your photos look changes.</p></details><details><summary>Does it touch photos I take without it?</summary><p>No. Filing starts when you tap Shoot and stops the moment the camera closes.</p></details><details><summary>Where do my photos go?</summary><p>Into folders in DCIM › Sortshot, so each folder is also an album in the phone's Gallery.</p></details><details><summary>Why does it ask for all files access and usage access?</summary><p>All files access lets it move your shots out of the Camera folder. Usage access lets it see the moment the camera closes. Nothing about your app use is kept or sent.</p></details><details><summary>How do I switch on usage access?</summary><p>Android locks it for apps downloaded outside the Play Store. Try to switch Sortshot on once, then open Settings, Apps, Sortshot, tap the three dots and choose Allow restricted settings. The app shows these steps.</p></details><details><summary>Is Google Drive backup needed?</summary><p>No. It is off until you connect it, and copies only the folders you choose. A photo deleted on the phone stays in your Drive.</p></details><details><summary>How do I update Sortshot?</summary><p>The app tells you when a new version is out. Download it from this site and install it over the old one; your folders, tags and notes stay.</p></details></div>
+</div>
+</section>
+
+<section class="closing" aria-labelledby="closing-h">
+<div class="wrap">
+<div><h2 id="closing-h">Every photo in the right folder, the moment you take it</h2><p>Free, with no adverts and nothing to unlock. Made by the developer of several other free Android apps: <a href="more-apps.html">see them all</a>.</p></div>
+<a class="button" href="https://github.com/CustomGPTer/sortshot/releases/latest/download/Sortshot.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download for Android</a>
+</div>
+</section>
 </main>
-<footer><p>Sortshot is free. No adverts, no accounts, no paid version.</p><p>Made by Jonathan Jackson · <a href="https://github.com/CustomGPTer/sortshot/issues">Report a problem</a></p></footer>
+<footer class="colophon">
+<div class="wrap">
+<div>
+<a class="brand" href="./" aria-label="Sortshot home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#15171c"/><path d="M14 18h13c1.3 0 2.5.6 3.3 1.6L33.2 23H50c2.8 0 5 2.2 5 5v20c0 2.8-2.2 5-5 5H14c-2.8 0-5-2.2-5-5V23c0-2.8 2.2-5 5-5z" fill="#ffc233"/><circle cx="32" cy="38" r="10.5" fill="#15171c"/><circle cx="32" cy="38" r="6.2" fill="#ffc233"/><circle cx="34.4" cy="35.6" r="1.7" fill="#15171c"/></svg><span>Sortshot</span></a>
+<p>&copy; 2026 Jonathan Jackson. Sortshot is an independent app.</p>
+<p>This site uses no cookies and no tracking.</p>
+<p>Set in Bricolage Grotesque and Atkinson Hyperlegible.</p>
+</div>
+<nav aria-label="The app"><h2>The app</h2><ul>
+<li><a href="./">Home</a></li>
+<li><a href="./compare.html">Compare</a></li>
+<li><a href="./releases.html">Release notes</a></li>
+
+</ul></nav>
+<nav aria-label="Legal"><h2>Legal</h2><ul>
+<li><a href="./privacy.html">Privacy policy</a></li>
+<li><a href="./terms.html">Terms of use</a></li>
+<li><a href="./licences.html">Licences</a></li>
+</ul></nav>
+<nav aria-label="More"><h2>More</h2><ul>
+<li><a href="./more-apps.html">More apps</a></li>
+<li><a href="https://customgpter.github.io/">All apps</a></li>
+<li><a href="https://github.com/CustomGPTer/sortshot/issues">Contact</a></li>
+</ul></nav>
+</div>
+</footer>
 </body>
 </html>

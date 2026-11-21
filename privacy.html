@@ -1,57 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy · Sortshot</title>
-<meta name="description" content="How Sortshot handles your photos and what its permissions are for.">
+<title>Sortshot privacy policy</title>
+<meta name="description" content="What Sortshot does with your information: in short, it stays on your phone.">
 <meta name="author" content="Jonathan Jackson">
 <link rel="canonical" href="https://customgpter.github.io/sortshot/privacy.html">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<meta property="og:title" content="Privacy · Sortshot">
-<meta property="og:description" content="How Sortshot handles your photos and what its permissions are for.">
-<meta property="og:image" content="https://customgpter.github.io/sortshot/assets/screens.png">
-<meta name="theme-color" content="#0e0f12">
-<link rel="stylesheet" href="assets/site.css">
+<meta name="theme-color" content="#f6f4ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0f12" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sortshot">
+<meta property="og:title" content="Sortshot privacy policy">
+<meta property="og:description" content="What Sortshot does with your information: in short, it stays on your phone.">
+<meta property="og:url" content="https://customgpter.github.io/sortshot/privacy.html">
+<meta property="og:image" content="https://customgpter.github.io/sortshot/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sortshot&#x27;s folders screen with Kitchen, Garden and Site visits">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<link rel="preload" href="./assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/site.css?v=1">
+<link rel="stylesheet" href="./assets/house.css?v=1">
+<link rel="stylesheet" href="./assets/apps-list.css?v=1">
+<script src="./assets/apps-list.js?v=1" defer></script>
 </head>
 <body>
-<header><a class="brand" href="index.html"><img src="assets/favicon.svg" alt="" width="28" height="28">Sortshot</a><nav><a href="index.html">Home</a><a href="releases.html">Releases</a><a href="more-apps.html">More apps</a><a href="privacy.html" class="on">Privacy</a><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav></header>
-<main>
-
-<h1>Privacy</h1>
-<p class="small">Last updated 17 November 2026</p>
-<p class="lead">Sortshot has no accounts, no adverts and no analytics. Its maker runs no servers and receives nothing from the app. Your photos, folders, tags and notes stay on your phone unless you switch on Google Drive backup, and then they go only to your own Drive.</p>
-<h2>When the app uses the internet</h2>
-<ul>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<a class="brand" href="./" aria-label="Sortshot home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#15171c"/><path d="M14 18h13c1.3 0 2.5.6 3.3 1.6L33.2 23H50c2.8 0 5 2.2 5 5v20c0 2.8-2.2 5-5 5H14c-2.8 0-5-2.2-5-5V23c0-2.8 2.2-5 5-5z" fill="#ffc233"/><circle cx="32" cy="38" r="10.5" fill="#15171c"/><circle cx="32" cy="38" r="6.2" fill="#ffc233"/><circle cx="34.4" cy="35.6" r="1.7" fill="#15171c"/></svg><span>Sortshot</span></a>
+<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="./compare.html">Compare</a></li><li><a href="./releases.html">Releases</a></li><li><a class="more-apps" href="./more-apps.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg>More apps</a></li></ul></nav>
+<a class="button small" href="https://github.com/CustomGPTer/sortshot/releases/latest/download/Sortshot.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download</a>
+</div>
+</header>
+<main id="main" class="doc">
+<div class="wrap">
+<div class="measure">
+<h1>Privacy policy</h1>
+<p class="lede">Sortshot has no accounts, no adverts and no analytics. Its maker runs no servers and receives nothing from the app. Your photos, folders, tags and notes stay on your phone unless you switch on Google Drive backup, and then they go only to your own Drive.</p>
+<h2 id="when-the-app-uses-the-internet">When the app uses the internet</h2><ul>
 <li><strong>Checking for a new version.</strong> The app asks GitHub for the latest release. GitHub sees your internet address, as any website does. This can be switched off in Settings.</li>
 <li><strong>Google Drive backup, only if you connect it.</strong> Photos and videos in the folders you choose, and a list of your tags and notes, are sent to a folder called Sortshot in your own Google Drive. Sortshot asks Google for the narrowest permission there is: it can see and change only the files and folders it created itself. It cannot see anything else in your Drive. Sign-in is handled by Google on your phone; Sortshot never sees your password. Disconnecting in the app gives the permission up. What is already in your Drive stays there until you remove it.</li>
 <li><strong>Dictating a note, only if you use it.</strong> The Dictate button opens the phone's own voice typing, which belongs to Google or Samsung and works under their terms. Sortshot receives only the words that come back.</li>
 <li><strong>Links you tap,</strong> such as this site or another app's page, open in your browser.</li>
-</ul>
-<h2>How Sortshot uses Google user data</h2>
-<p>With Google Drive connected, the app uses your Google account only to create, update, rename and move its own files and folders in your Drive, to read back its own list of tags and notes when you ask it to, and to show which account is connected. This data is not sent to the maker or to anyone else, is not used for advertising, and is not used to train any model. The app's use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
-<h2>What is kept on the phone</h2>
-<ul>
+</ul><h2 id="how-sortshot-uses-google-user-data">How Sortshot uses Google user data</h2><p>With Google Drive connected, the app uses your Google account only to create, update, rename and move its own files and folders in your Drive, to read back its own list of tags and notes when you ask it to, and to show which account is connected. This data is not sent to the maker or to anyone else, is not used for advertising, and is not used to train any model. The app's use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p><h2 id="what-is-kept-on-the-phone">What is kept on the phone</h2><ul>
 <li>Your photos and videos, as ordinary files in DCIM › Sortshot.</li>
 <li>Your settings, and a small database holding tags, notes, what has been filed and what has been backed up.</li>
 <li>The bin, in a hidden folder inside DCIM › Sortshot, for 30 days.</li>
 <li>Reports and zips you make, in Documents › Sortshot.</li>
 </ul>
-<p>Tags and notes are also written into JPEG photos themselves, so anyone you give such a photo to can read them. This can be switched off in Settings. Removing the app removes its settings and database. Your photos stay where they are.</p>
-<h2>What the permissions are for</h2>
-<ul>
+<p>Tags and notes are also written into JPEG photos themselves, so anyone you give such a photo to can read them. This can be switched off in Settings. Removing the app removes its settings and database. Your photos stay where they are.</p><h2 id="what-the-permissions-are-for">What the permissions are for</h2><ul>
 <li><strong>All files access:</strong> to move the shots you take out of the Camera folder into your folders, and to manage those folders.</li>
 <li><strong>Usage access:</strong> to see which app is on screen, for one purpose: knowing the moment the camera closes so that filing stops. Nothing about your app use is stored or sent.</li>
 <li><strong>Notifications:</strong> for the Stop and Switch folder buttons while you shoot, the count of shots filed, and a notice if the Drive backup needs you to sign in again.</li>
 <li><strong>Internet:</strong> for the two uses above and nothing else.</li>
-</ul>
-<h2>Children</h2>
-<p>Sortshot is a general tool and is not aimed at children. It collects nothing from anyone.</p>
-<h2>Changes and questions</h2>
-<p>If this page changes, the date at the top changes with it. Questions and problems go to the <a href="https://github.com/CustomGPTer/sortshot/issues">issues page</a>.</p>
-<p class="small">Sortshot is made by Jonathan Jackson in the United Kingdom.</p>
-
+</ul><h2 id="children">Children</h2><p>Sortshot is a general tool and is not aimed at children. It collects nothing from anyone.</p>
+<h2 id="contact">Contact</h2>
+<p>Questions about this policy can be raised on <a href="https://github.com/CustomGPTer/sortshot/issues">GitHub</a>. This policy was last updated on 21 November 2026.</p>
+</div>
+</div>
 </main>
-<footer><p>Sortshot is free. No adverts, no accounts, no paid version.</p><p>Made by Jonathan Jackson · <a href="https://github.com/CustomGPTer/sortshot/issues">Report a problem</a></p></footer>
+<footer class="colophon">
+<div class="wrap">
+<div>
+<a class="brand" href="./" aria-label="Sortshot home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#15171c"/><path d="M14 18h13c1.3 0 2.5.6 3.3 1.6L33.2 23H50c2.8 0 5 2.2 5 5v20c0 2.8-2.2 5-5 5H14c-2.8 0-5-2.2-5-5V23c0-2.8 2.2-5 5-5z" fill="#ffc233"/><circle cx="32" cy="38" r="10.5" fill="#15171c"/><circle cx="32" cy="38" r="6.2" fill="#ffc233"/><circle cx="34.4" cy="35.6" r="1.7" fill="#15171c"/></svg><span>Sortshot</span></a>
+<p>&copy; 2026 Jonathan Jackson. Sortshot is an independent app.</p>
+<p>This site uses no cookies and no tracking.</p>
+<p>Set in Bricolage Grotesque and Atkinson Hyperlegible.</p>
+</div>
+<nav aria-label="The app"><h2>The app</h2><ul>
+<li><a href="./">Home</a></li>
+<li><a href="./compare.html">Compare</a></li>
+<li><a href="./releases.html">Release notes</a></li>
+
+</ul></nav>
+<nav aria-label="Legal"><h2>Legal</h2><ul>
+<li><a href="./privacy.html">Privacy policy</a></li>
+<li><a href="./terms.html">Terms of use</a></li>
+<li><a href="./licences.html">Licences</a></li>
+</ul></nav>
+<nav aria-label="More"><h2>More</h2><ul>
+<li><a href="./more-apps.html">More apps</a></li>
+<li><a href="https://customgpter.github.io/">All apps</a></li>
+<li><a href="https://github.com/CustomGPTer/sortshot/issues">Contact</a></li>
+</ul></nav>
+</div>
+</footer>
 </body>
 </html>
