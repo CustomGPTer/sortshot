@@ -1,8 +1,8 @@
-New in 1.3:
+Sortshot 1.3.1 ties Sortshot into TorusApps.com.
 
-- Timestamp on photos (Settings). The date and time are printed in the bottom-left corner of each photo as it is filed, the same size and place as the Samsung camera's own watermark.
-- Coordinates on photos (Settings). Where the photo was taken is printed on it as latitude and longitude, from the location the camera saved in the photo.
-- Both are off until you switch them on. JPEG photos only; motion photos, HEIC, RAW, 200 MP photos and videos are filed without a stamp.
+- The website, privacy policy, release notes and update check now use torusapps.com; the update check reads the signed TorusApps catalogue, and Get it opens Sortshot's page.
+- More apps opens torusapps.com (the list inside the app is gone).
+- About adds Developed by Jonathan Jackson and hello@torusapps.com.
+- A new 2-second opening screen, and Android 12+ opens on Sortshot's own colours with no white flash.
 
-Download **Sortshot.apk** below and open it on your phone. Android 13 or newer.
-Installing notes: https://customgpter.github.io/sortshot/#installing
+Installs over the earlier version and keeps everything.
